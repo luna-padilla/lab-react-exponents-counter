@@ -1,26 +1,19 @@
-import { useState } from "react";
-import ExponentTwo from "./ExponentTwo";
-import ExponentThree from "./ExponentThree";
-
-const Counter = () => {
-  const [count, setCount] = useState(0);
-
-  const decrement = () => setCount((prevCount) => prevCount - 1);
-  const increment = () => setCount((prevCount) => prevCount + 1);
-
+const Counter = ({count, increment, decrement }) => {
   return (
-    <div className="counter-container">
+    <div className="">
       <p className="counter-value">{count}</p>
-      <button className="counter-button" onClick={decrement}>-</button>
-      <button className="counter-button" onClick={increment}>+</button>
+      <button className="counter-button" onClick={decrement}>
+        -
+      </button>
+      <button className="counter-button" onClick={increment}>
+        +
+      </button>
       <br />
-      <h2><em>Exponents</em></h2>
+      <h2>
+        <em>Exponents</em>
+      </h2>
 
-      <div className="container">
-           <ExponentTwo count={count}/>
-          <ExponentThree count={count}/>
-      </div>
-    
+      <div className="row"></div>
     </div>
   );
 };
