@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ExponentTwo from "./ExponentTwo";
+import ExponentThree from "./ExponentThree";
 
 const Counter = () => {
   const [count, setCount] = useState(0);
@@ -16,7 +17,8 @@ const Counter = () => {
       <h2><em>Exponents</em></h2>
 
       <div className="container">
-          <ExponentTwo count={count}></ExponentTwo>
+           <ExponentTwo count={count}/>
+          <ExponentThree count={count}/>
       </div>
     
     </div>
