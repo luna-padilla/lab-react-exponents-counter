@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ExponentTwo from "./ExponentTwo";
 
 const Counter = () => {
   const [count, setCount] = useState(0);
@@ -11,6 +12,13 @@ const Counter = () => {
       <p className="counter-value">{count}</p>
       <button className="counter-button" onClick={decrement}>-</button>
       <button className="counter-button" onClick={increment}>+</button>
+      <br />
+      <h2><em>Exponents</em></h2>
+
+      <div className="container">
+          <ExponentTwo count={count}></ExponentTwo>
+      </div>
+    
     </div>
   );
 };

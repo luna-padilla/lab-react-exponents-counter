@@ -14,16 +14,7 @@ function App () {
   
       <Counter/>
 
-      <br />
-      <h2><em>Exponents</em></h2>
-
-      <div className="container">
-        <ExponentTwo />
-        <ExponentThree />
-        <ExponentFour />
-        <ExponentFive />
-        <ExponentSix />
-      </div>
+      
     </div>
   );
 }
